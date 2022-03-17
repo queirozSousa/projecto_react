@@ -1,0 +1,33 @@
+.footer{
+    background-color: #222;
+    color: white;
+    padding: 3em;
+    text-align: center;
+}
+
+.icons{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.icons li{
+    margin: 0 1rem;
+}
+
+.icons li:hover{
+    color: #ffbb33;
+}
+
+.icons svg{
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.copy_right {
+    margin-top: 2em;
+}
+.copy_right span{
+    font-weight: bold;
+    color: #ffbb33;
+}
