@@ -1,3 +1,4 @@
+
 import styles from './Select.module.css'
 
 function Select({text, name,options, handleOnchange, value}){
@@ -6,6 +7,9 @@ function Select({text, name,options, handleOnchange, value}){
             <label htmlFor={name}>{text}: </label>
             <select name={name} id={name}>
                 <option> Selecione uma opcao</option>
+                {options.map((option) => (
+                    <option value={option.id} key={option.id}>{option.name}</option>
+                ))}
             </select>
         </div>
     )
