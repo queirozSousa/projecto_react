@@ -1,11 +1,11 @@
 import styles from './NewProject.module.css'
 import ProjecForm from '../project/ProjectForm'
-import {useHistory} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 
 
 function NewProject(){
 
-    const history = useHistory
+    const navigate = useNavigate();
 
     function cretePost(project){
         //initialize cost and services
