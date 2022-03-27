@@ -5,7 +5,7 @@ import Select from '../form/Select'
 import SubmitButton from '../form/SubmitButton'
 import styles from './Project.module.css'
 
-function ProjecForm({btnText}){
+function ProjecForm({handleSubmit, btnText, projectData}){
     const[categories, setCategories] = useState([])
 
     useEffect(() => {
