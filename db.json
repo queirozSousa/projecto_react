@@ -1,22 +1,55 @@
 {
-    "projects":[],
-    "categories":[
-        {
-            "id":1,
-            "name": "Infra"
-        },
-        {
-            "id":2,
-            "name": "Desenvolvimento"
-        },
-        {
-            "id":3,
-            "name": "Design"
-        },
-        {
-            "id":4,
-            "name": "Planejamento"
-        }
-
-    ]
+  "projects": [
+    {
+      "name": "Instalar Redes",
+      "budget": "1223",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 1
+    },
+    {
+      "name": "Denvelvimento de API",
+      "budget": "123521",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 2
+    },
+    {
+      "name": "Sistema de Stock",
+      "budget": "12352",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 3
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Infra"
+    },
+    {
+      "id": 2,
+      "name": "Desenvolvimento"
+    },
+    {
+      "id": 3,
+      "name": "Design"
+    },
+    {
+      "id": 4,
+      "name": "Planejamento"
+    }
+  ]
 }

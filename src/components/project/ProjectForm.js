@@ -27,6 +27,7 @@ function ProjecForm({handleSubmit, btnText, projectData}){
     const submit = (e) =>{
         e.preventDefault()
         handleSubmit(project)
+       // console.log(project)
     }
     //Para mudar a propriedade de texto
     function handlechange(e){
@@ -47,9 +48,9 @@ function ProjecForm({handleSubmit, btnText, projectData}){
     }
     return(
         <form onSubmit={submit} className={styles.form}>
-            <Input type='text' text='Nome do Projeto' name='name' placeholder='Insira o nome' handleOnchange={handlechange}/>
-            <Input type='number' text='Orcamento do projeto' name='budget' placeholder='Insira o nome do projeto' handleOnchange={handlechange}/>
-            <Select name='category_id' text='Selecione a categoria' options={categories} handleOnchange={handleCategory}/>
+            <Input type='text' text='Nome do Projeto' name='name' placeholder='Insira o nome' handleOnchange={handlechange} value={project.name ? project.name: ''}/>
+            <Input type='number' text='Orcamento do projeto' name='budget' placeholder='Insira o nome do projeto' handleOnchange={handlechange} value={project.budget ? project.budget : ''}/>
+            <Select name='category_id' text='Selecione a categoria' options={categories} handleOnchange={handleCategory} value={project.category ? project.category.id : ''}/>
             <SubmitButton text={btnText}/>
             
         </form>
