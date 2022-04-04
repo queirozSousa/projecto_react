@@ -24,7 +24,7 @@ function NewProject(){
         })
         .then((resp)=> resp.json())
         .then((data)=>{
-            console.log(data)
+            //console.log(data)
             //redirect and flash message
             navigate('/projects', {message: 'Project criado com Sucesso!'})
         })
